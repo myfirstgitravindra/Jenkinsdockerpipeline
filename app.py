@@ -20,7 +20,5 @@ def data():
         ]
     })
 
-if __name__ == "__main__":
-    # Listen on 0.0.0.0 so Docker can bind the port
-    app.run(host="0.0.0.0", port=5000)
-
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=1010)  # Ensure this matches your Docker port mapping
