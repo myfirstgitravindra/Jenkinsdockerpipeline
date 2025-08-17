@@ -11,9 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose port
-EXPOSE 5000
 ARG FLASK_PORT=5000
-ENV FLASK_PORT=$FLASK_PORT
 EXPOSE $FLASK_PORT
 
 # Correct CMD syntax — comma between arguments
